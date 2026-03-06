@@ -11,6 +11,7 @@ permalink: /contact/
       I'm currently open to new opportunities. Whether you have a question, a project idea,
       or just want to say hi — my inbox is always open!
     </p>
+    <!-- EDIT: Update the paragraph above and remove the one below once you have real social links -->
     <p>
       You can also find me on the platforms below.
     </p>
@@ -38,7 +39,12 @@ permalink: /contact/
   </div>
 
   <div>
-    <!-- Update YOUR_FORM_ID with your Formspree form ID from https://formspree.io -->
+    <!--
+      EDIT: Contact form setup (three steps)
+      1. Create a free account at https://formspree.io
+      2. Create a new form and copy the form ID from the dashboard
+      3. Replace YOUR_FORM_ID below with your real ID, e.g. xdovpkqz
+    -->
     <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <div class="form-group">
         <label for="name">Name</label>

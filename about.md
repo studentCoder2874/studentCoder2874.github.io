@@ -6,8 +6,9 @@ permalink: /about/
 
 <div class="about-grid fade-in">
   <div class="about-text">
+    <!-- EDIT: Replace the paragraphs below with your own bio -->
     <p>
-      Hello! I'm <strong>Tahir Hassan</strong>, a software developer based on the web. I enjoy creating
+      Hello! I'm <strong>{{ site.author.name }}</strong>, a software developer based on the web. I enjoy creating
       things that live on the internet — whether that be websites, applications, or anything in between.
     </p>
     <p>
@@ -27,6 +28,7 @@ permalink: /about/
 
 ## Skills
 
+<!-- EDIT: Add or remove skill tags to match your actual skill set -->
 <div class="skills-section fade-in">
   <div class="skills-grid">
     <span class="skill-tag">HTML5</span>
@@ -46,6 +48,7 @@ permalink: /about/
 
 ## Education
 
+<!-- EDIT: Replace with your real degree, institution, and dates -->
 <div class="timeline fade-in">
   <div class="timeline-item">
     <p class="timeline-date">2020 – 2024</p>
@@ -60,6 +63,7 @@ permalink: /about/
 
 ## Experience
 
+<!-- EDIT: Replace each timeline-item with your real work experience -->
 <div class="timeline fade-in">
   <div class="timeline-item">
     <p class="timeline-date">2024 – Present</p>

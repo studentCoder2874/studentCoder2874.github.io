@@ -1,12 +1,42 @@
+# ──────────────────────────────────────────────────
+# SITE SETTINGS — edit these to personalise the site
+# ──────────────────────────────────────────────────
+
+# Browser tab title (format: "Name | Portfolio")
 title: Tahir Hassan | Portfolio
+
+# Short sentence shown in search results and page meta tags
 description: Personal portfolio and blog of Tahir Hassan
-url: "https://tahirhassan.me"
+
+# Hero tagline shown on the home page under your name
+tagline: I build things for the web.
+
+# One-liner shown on the home page below the tagline
+hero_description: >-
+  I'm a software developer passionate about crafting clean, accessible,
+  and performant web experiences. Currently focused on building interesting
+  and meaningful digital products.
+
+# Full URL of your live site (no trailing slash)
+url: "https://studentCoder2874.github.io"
 baseurl: ""
+
+# ──────────────────────────────────────────────────
+# AUTHOR — your personal details
+# ──────────────────────────────────────────────────
 author:
   name: Tahir Hassan
+
+  # Your public e-mail address (leave blank "" to hide)
   email: ""
+
+  # GitHub username only, e.g. studentCoder2874
   github: studentCoder2874
+
+  # LinkedIn profile slug only, e.g. tahir-hassan  (leave blank "" to hide)
   linkedin: ""
+
+  # X / Twitter handle without @, e.g. tahirhassan  (leave blank "" to hide)
   twitter: ""
 
 markdown: kramdown

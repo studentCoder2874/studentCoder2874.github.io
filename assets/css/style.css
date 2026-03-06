@@ -40,6 +40,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor targets so the fixed header doesn't overlap them */
+  scroll-padding-top: var(--nav-height);
   font-size: 16px;
 }
 
@@ -1281,5 +1283,35 @@ main {
 
   .hero-tagline {
     font-size: 1.35rem;
+  }
+}
+
+/* ============================================
+   Accessibility — Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-greeting,
+  .hero-name,
+  .hero-tagline,
+  .hero-description,
+  .hero-cta {
+    animation: none;
+    opacity: 1;
   }
 }
