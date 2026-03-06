@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="post-article">
+  <div class="container container-narrow">
+    <header class="post-header fade-in">
+      {% if page.categories.size > 0 %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+        <span class="tag">{{ category }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        <span class="reading-time" data-content="{{ content }}"></span>
+      </div>
+      {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <span class="tag tag-sm">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    {% if page.image %}
+    <div class="post-hero-image fade-in">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+    </div>
+    {% endif %}
+
+    <div class="post-body fade-in">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <a href="{{ '/blog' | relative_url }}" class="btn btn-ghost">&larr; Back to Blog</a>
+    </footer>
+  </div>
+</article>

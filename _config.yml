@@ -1,0 +1,44 @@
+title: Tahir Hassan | Portfolio
+description: Personal portfolio and blog of Tahir Hassan
+url: "https://tahirhassan.me"
+baseurl: ""
+author:
+  name: Tahir Hassan
+  email: ""
+  github: studentCoder2874
+  linkedin: ""
+  twitter: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
