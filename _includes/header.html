@@ -1,0 +1,21 @@
+<header class="site-header" id="site-header">
+  <nav class="navbar">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>TH<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+      <li><a href="{{ '/about' | relative_url }}" class="nav-link">About</a></li>
+      <li><a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a></li>
+      <li><a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a></li>
+      <li><a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </nav>
+</header>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="page-section">
+  <div class="container">
+    {% if page.title %}
+    <div class="page-header fade-in">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
+    </div>
+    {% endif %}
+    <div class="page-content fade-in">
+      {{ content }}
+    </div>
+  </div>
+</section>
